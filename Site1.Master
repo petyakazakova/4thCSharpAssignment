@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="_4thCSharpHandIn.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Dental clinic page</title>
+    <link href="~/Styles/Styles.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Menu ID="Navigationmenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Dentist.aspx" Text="Add Dentist"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Patients.aspx" Text="Add Patient"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/loginDentist.aspx" Text="Dentist login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/loginPatient.aspx" Text="Patient login"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
